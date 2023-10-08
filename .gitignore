@@ -1,0 +1,12 @@
+Makefile
+CMakeCache.txt
+cmake_install.cmake_install
+*.o
+*.out
+.vscode/
+main
+CMakeFiles/
+
+# Executive files of data structures
+hash_table
+splay_tree
