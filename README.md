@@ -6,3 +6,4 @@ This repository contains various data structures, implemented with C language. E
 
 - [Hash Table](https://github.com/ViNN280801/C_Data_Structures/tree/main/Hash%20Table)
 - [Splay Tree](https://github.com/ViNN280801/C_Data_Structures/tree/main/Splay%20Tree)
+- [Stack](https://github.com/ViNN280801/C_Data_Structures/tree/main/Stack)
