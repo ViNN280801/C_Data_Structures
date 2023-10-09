@@ -34,6 +34,10 @@ HashTable *init_hash_table()
     hashTable->table = (Hash *)calloc(hashTable->capacity, sizeof(Hash));
     if (!hashTable->table)
     {
+        if (hashTable)
+            free(hashTable);
+        hashTable = NULL;
+
         fprintf(stderr, "Can't allocate memory: %s\n", strerror(errno));
         exit(EXIT_FAILURE);
     }

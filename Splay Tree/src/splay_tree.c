@@ -98,7 +98,6 @@ static Node *splay(Node *root, int key, int *comparisons)
 
 SplayTree *init_splay_tree()
 {
-
     SplayTree *tree = (SplayTree *)calloc(1, sizeof(SplayTree));
     if (!tree)
     {
@@ -112,7 +111,6 @@ SplayTree *init_splay_tree()
 
 Node *create_node(int key)
 {
-
     Node *node = (Node *)calloc(1, sizeof(Node));
     if (!node)
     {

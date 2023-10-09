@@ -27,6 +27,10 @@ Stack *initStack(int capacity)
     stack->array = (int *)calloc(capacity, sizeof(int));
     if (!stack->array)
     {
+        if (stack)
+            free(stack);
+        stack = NULL;
+
         fprintf(stderr, "Can't allocate memory: %s\n", strerror(errno));
         exit(EXIT_FAILURE);
     }

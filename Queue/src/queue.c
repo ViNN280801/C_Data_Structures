@@ -28,6 +28,10 @@ Queue *initQueue(int capacity)
     queue->array = (int *)calloc(capacity, sizeof(int));
     if (!queue->array)
     {
+        if (queue)
+            free(queue);
+        queue = NULL;
+
         fprintf(stderr, "Can't allocate memory: %s\n", strerror(errno));
         exit(EXIT_FAILURE);
     }
