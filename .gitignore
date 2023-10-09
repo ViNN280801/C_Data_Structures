@@ -11,3 +11,5 @@ CMakeFiles/
 hash_table
 splay_tree
 stack
+queue
+circular_queue
