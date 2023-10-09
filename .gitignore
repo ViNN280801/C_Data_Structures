@@ -13,3 +13,4 @@ splay_tree
 stack
 queue
 circular_queue
+deque
