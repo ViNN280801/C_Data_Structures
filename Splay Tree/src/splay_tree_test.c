@@ -73,7 +73,7 @@ int main()
     printf("Average comparisons per key: %.2lf\n", averageComparisons);
 
     // Calculate and display the memory used by the splay tree
-    printf("Memory used by Splay Tree: %lu bytes\n", splay_tree_memory_usage(tree->root));
+    printf("Memory used by Splay Tree: %lu bytes\n", splay_tree_memory_usage(tree));
 
     // Clean up the hash table
     destroy_splay_tree(tree);

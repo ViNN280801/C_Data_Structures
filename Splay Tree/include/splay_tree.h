@@ -2,41 +2,69 @@
 #define SPLAY_TREE_H
 
 // Struct for the nodes in the splay-tree
-typedef struct Node
-{
-    int key;            // Key value of the node
-    struct Node *left;  // Ptr to the left child node
-    struct Node *right; // Ptr to the right child node
-} Node;
+typedef struct Node_t Node;
 
-// Splay-tree structure, which includes a ptr to the root node
-typedef struct SplayTree
-{
-    Node *root; // Ptr to the root node of the tree
-} SplayTree;
+// Splay-tree structure, which includes a pointer to the root node
+typedef struct SplayTree_t SplayTree;
 
-// Initializing a new splay-tree
-// Returns a ptr to it
+/**
+ * @brief Initialize a new splay-tree
+ * @return A pointer to the initialized splay-tree
+ */
 SplayTree *init_splay_tree();
 
-// Creating a new node with the given key value
-// Returns a ptr to it
+/**
+ * @brief Create a new node with the given key value
+ * @param key The key value for the new node
+ * @return A pointer to the new node
+ */
 Node *create_node(int key);
 
-// Inserting a new node with the given key into the splay-tree
+/**
+ * @brief Insert a new node with the given key into the splay-tree
+ * @param tree Pointer to the splay-tree
+ * @param key Key to be inserted into the tree
+ */
 void insert(SplayTree *tree, int key);
 
-// Performs an in-order traversal of the splay-tree, starting from the specified root
-void in_order_traverse(Node *root);
+/**
+ * @brief Perform an in-order traversal of the splay-tree, starting from the specified root
+ * @param tree Pointer to the splay-tree
+ */
+void in_order_traverse(SplayTree *tree);
 
-// Search for a node with the given key
-// Returns "NULL" if key not found
+/**
+ * @brief Perform a pre-order traversal of the splay-tree, starting from the specified root
+ * @param tree Pointer to the splay-tree
+ */
+void pre_order_traverse(SplayTree *tree);
+
+/**
+ * @brief Perform a post-order traversal of the splay-tree, starting from the specified root
+ * @param tree Pointer to the splay-tree
+ */
+void post_order_traverse(SplayTree *tree);
+
+/**
+ * @brief Search for a node with the given key
+ * @param tree Pointer to the splay-tree
+ * @param key Key to search for
+ * @param comparisons Pointer to an integer to store the number of comparisons made
+ * @return A pointer to the found node, or NULL if the key is not found
+ */
 Node *search(SplayTree *tree, int key, int *comparisons);
 
-// Calculate memory usage of splay tree
-size_t splay_tree_memory_usage(Node *root);
+/**
+ * @brief Calculate the memory usage of the splay tree
+ * @param tree Pointer to the splay-tree
+ * @return The memory usage in bytes
+ */
+size_t splay_tree_memory_usage(SplayTree *tree);
 
-// Destoying object of splay-tree, freeing memory
+/**
+ * @brief Destroy the splay-tree object and free associated memory
+ * @param tree Pointer to the splay-tree to destroy
+ */
 void destroy_splay_tree(SplayTree *tree);
 
 #endif // !SPLAY_TREE_H

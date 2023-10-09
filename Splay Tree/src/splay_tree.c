@@ -5,6 +5,18 @@
 
 #include "../include/splay_tree.h"
 
+struct Node_t
+{
+    int key;     // Key value of the node
+    Node *left;  // Ptr to the left child node
+    Node *right; // Ptr to the right child node
+};
+
+struct SplayTree_t
+{
+    Node *root; // Ptr to the root node of the tree
+};
+
 static Node *leftRotate(Node *node)
 {
     // Takes a node as input, and it performs a left rotation on the node and its right child
@@ -156,15 +168,41 @@ void insert(SplayTree *tree, int key)
     }
 }
 
-void in_order_traverse(Node *root)
+void inOrderTraverse(Node *root)
 {
     if (root)
     {
-        in_order_traverse(root->left);
+        inOrderTraverse(root->left);
         printf("%d ", root->key);
-        in_order_traverse(root->right);
+        inOrderTraverse(root->right);
     }
 }
+
+void preOrderTraverse(Node *root)
+{
+    if (root)
+    {
+        printf("%d ", root->key);
+        preOrderTraverse(root->left);
+        preOrderTraverse(root->right);
+    }
+}
+
+void postOrderTraverse(Node *root)
+{
+    if (root)
+    {
+        postOrderTraverse(root->left);
+        postOrderTraverse(root->right);
+        printf("%d ", root->key);
+    }
+}
+
+void in_order_traverse(SplayTree *tree) { inOrderTraverse(tree->root); }
+
+void pre_order_traverse(SplayTree *tree) { preOrderTraverse(tree->root); }
+
+void post_order_traverse(SplayTree *tree) { postOrderTraverse(tree->root); }
 
 Node *search(SplayTree *tree, int key, int *comparisons)
 {
@@ -184,18 +222,20 @@ static void free_splay_tree_helper(Node *root)
     }
 }
 
-size_t splay_tree_memory_usage(Node *root)
+size_t splayTreeMemUsage(Node *root)
 {
     if (!root)
         return 0ul;
 
     // Calculate memory used by the root and its children recursively
     size_t node_memory = sizeof(Node),
-           left_memory = splay_tree_memory_usage(root->left),
-           right_memory = splay_tree_memory_usage(root->right);
+           left_memory = splayTreeMemUsage(root->left),
+           right_memory = splayTreeMemUsage(root->right);
 
     return node_memory + left_memory + right_memory;
 }
+
+size_t splay_tree_memory_usage(SplayTree *tree) { return splayTreeMemUsage(tree->root); }
 
 void destroy_splay_tree(SplayTree *tree)
 {
