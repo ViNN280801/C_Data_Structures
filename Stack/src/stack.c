@@ -7,6 +7,14 @@
 
 #include "../include/stack.h"
 
+struct Stack_t
+{
+    int *array;   // Pointer to the stack's array
+    int size;     // Current count of elements
+    int capacity; // Maximum capacity of the stack
+    int top;      // Index of the top element
+};
+
 Stack *initStack(int capacity)
 {
     Stack *stack = (Stack *)calloc(1, sizeof(Stack));
@@ -76,6 +84,10 @@ int peek(Stack *stack)
     }
     return stack->array[stack->top];
 }
+
+int size(Stack *stack) { return stack->size; }
+
+int capacity(Stack *stack) { return stack->capacity; }
 
 void destroyStack(Stack *stack)
 {

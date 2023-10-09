@@ -72,10 +72,6 @@ int main()
     double averageComparisons = (double)totalComparisons / MAX_KEYS_COUNT;
     printf("Average comparisons per key: %.2lf\n", averageComparisons);
 
-    // Calculate and display the memory used by the hash table
-    size_t hashTableMemory = sizeof(HashTable) + (sizeof(Hash) * hashTable->capacity);
-    printf("Memory used by hash table: %lu bytes\n", hashTableMemory);
-
     // Clean up the hash table
     destroy_hash_table(hashTable);
 

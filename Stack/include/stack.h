@@ -4,13 +4,7 @@
 #define EMPTY_VALUE -1
 
 /// @brief Structure to represent the stack
-typedef struct Stack
-{
-    int *array;   // Pointer to the stack's array
-    int size;     // Current count of elements
-    int capacity; // Maximum capacity of the stack
-    int top;      // Index of the top element
-} Stack;
+typedef struct Stack_t Stack;
 
 /**
  * @brief Initialize a new stack with a specified capacity
@@ -53,6 +47,18 @@ int pop(Stack *stack);
  * @return The top item or -1 if the stack is empty
  */
 int peek(Stack *stack);
+
+/**
+ * @brief Getter for size of the stack
+ * @return Size of the stack (count of elements)
+ */
+int size(Stack *stack);
+
+/**
+ * @brief Getter for capacity of the stack
+ * @return Capacity of the stack (reserved count of elements in the stack)
+ */
+int capacity(Stack *stack);
 
 /**
  * @brief Destroy the stack and free allocated memory

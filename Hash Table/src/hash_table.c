@@ -5,6 +5,20 @@
 
 #include "../include/hash_table.h"
 
+// Structure for a hash table entry
+typedef struct Hash
+{
+    int key;
+    int value;
+} Hash;
+
+struct HashTable_t
+{
+    Hash *table;  // Ptr on the table
+    int capacity; // Maximum capacity of the table
+    int size;     // Current count of elements in the table
+};
+
 HashTable *init_hash_table()
 {
     HashTable *hashTable = (HashTable *)calloc(1, sizeof(HashTable));
@@ -128,6 +142,10 @@ int search(HashTable *hashTable, int key, int *comparisons)
     // Key not found
     return EMPTY_VALUE;
 }
+
+int size(HashTable *hashTable) { return hashTable->size; }
+
+int capacity(HashTable *hashTable) { return hashTable->capacity; }
 
 void delete_key(HashTable *hashTable, int key)
 {
