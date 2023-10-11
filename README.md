@@ -6,6 +6,7 @@ This repository contains various data structures, implemented with C language. E
 
 - [Circular Queue](https://github.com/ViNN280801/C_Data_Structures/tree/main/Circular%20Queue)
 - [Deque](https://github.com/ViNN280801/C_Data_Structures/tree/main/Deque)
+- [Doubly Linked List](https://github.com/ViNN280801/C_Data_Structures/tree/main/Doubly%20Linked%20List)
 - [Hash Table](https://github.com/ViNN280801/C_Data_Structures/tree/main/Hash%20Table)
 - [Queue](https://github.com/ViNN280801/C_Data_Structures/tree/main/Queue)
 - [Singly Linked List](https://github.com/ViNN280801/C_Data_Structures/tree/main/Singly%20Linked%20List)
