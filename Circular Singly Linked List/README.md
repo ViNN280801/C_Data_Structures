@@ -28,9 +28,9 @@ You can compile the Singly Linked List implementation using the provided scripts
 Run the following commands to compile the Stack using the included compile.sh script:
 
 ```bash
-gcc -c src/stack.c -o src/stack.o
-gcc -c src/main.c -o src/main.o
-gcc src/stack.o src/main.o -o stack
+gcc -c src/circular_singly_linked_list.c -Wall -Wpedantic -Wextra -o src/circular_singly_linked_list.o
+gcc -c src/circular_singly_linked_list_test.c -Wall -Wpedantic -Wextra -o src/circular_singly_linked_list_test.o
+gcc src/circular_singly_linked_list.o src/circular_singly_linked_list_test.o -Wall -Wpedantic -Wextra -o circular_singly_linked_list
 ```
 
 or execute just ./compile.sh
