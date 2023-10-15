@@ -15,3 +15,4 @@ This repository contains various data structures, implemented with C language. E
 - [Singly Linked List](https://github.com/ViNN280801/C_Data_Structures/tree/main/Singly%20Linked%20List)
 - [Splay Tree](https://github.com/ViNN280801/C_Data_Structures/tree/main/Splay%20Tree)
 - [Stack](https://github.com/ViNN280801/C_Data_Structures/tree/main/Stack)
+- [Vector](https://github.com/ViNN280801/C_Data_Structures/tree/main/Vector)
