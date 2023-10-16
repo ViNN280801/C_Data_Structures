@@ -3,9 +3,8 @@
 ## Description
 
 The String is a versatile C library for handling strings dynamically. This library allows you to work with dynamic strings in C without the need to manage memory explicitly. It offers functions for various string operations, such as appending characters, appending C-style strings, getting string length, clearing string content, obtaining substrings, erasing characters or substrings, swapping strings, replacing substrings, finding substrings, and converting numbers to strings.
-Functionality
 
-The String provides the following functions:
+## Functionality
 
 - String \*initString(): Initializes a new dynamic string.
 - void appendChar(String \*str, char c): Appends a character to the end of the string.
