@@ -12,8 +12,8 @@ The String provides the following functions:
 - void appendString(String *str, const char *source): Appends a C-style string to the end of the dynamic string.
 - size_t length(String \*str): Retrieves the length of the string.
 - const char *c_str(String *str): Gets a C-style string (char array) from the dynamic string.
-- void clearString(String *str): Clears the content of the dynamic string.
-  0 String *getSubstring(String \*str, size_t position, size_t length): Retrieves a substring starting at a specified position with the given length.
+- void clearString(String \*str): Clears the content of the dynamic string.
+- String \*getSubstring(String \*str, size_t position, size_t length): Retrieves a substring starting at a specified position with the given length.
 - void eraseChar(String \*str, size_t position): Erases a character at a specified position.
 - void eraseSubstring(String \*str, size_t position, size_t length): Erases a substring starting at a specified position with the given length.
 - void swapStrings(String *str1, String *str2): Swaps the contents of two dynamic strings.
@@ -21,6 +21,7 @@ The String provides the following functions:
 - size_t findSubstring(String *str, const char *substring): Finds the first occurrence of a given substring.
 - String \*intToString(int value): Converts an integral value to a dynamic string.
 - String \*doubleToString(double value): Converts a floating-point value to a dynamic string.
+- void destroyString(String \*str): Deallocates memory that string object hold.
 
 ## Compiling
 
