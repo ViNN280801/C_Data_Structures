@@ -3,10 +3,10 @@
 
 #include <stdbool.h>
 
-// Structure to represent a node in the priority queue
+/// @brief Structure to represent a node in the priority queue
 typedef struct Node_t Node;
 
-// Structure to represent the priority queue
+/// @brief Structure to represent the priority queue
 typedef struct PriorityQueue_t PriorityQueue;
 
 /**
