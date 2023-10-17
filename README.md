@@ -10,6 +10,7 @@ This repository contains various data structures, implemented with C language. E
 - [Deque](https://github.com/ViNN280801/C_Data_Structures/tree/main/Deque)
 - [Doubly Linked List](https://github.com/ViNN280801/C_Data_Structures/tree/main/Doubly%20Linked%20List)
 - [Hash Table](https://github.com/ViNN280801/C_Data_Structures/tree/main/Hash%20Table)
+- [Heap](https://github.com/ViNN280801/C_Data_Structures/tree/main/Heap)
 - [Priority Queue](https://github.com/ViNN280801/C_Data_Structures/tree/main/Priority%20Queue)
 - [Queue](https://github.com/ViNN280801/C_Data_Structures/tree/main/Queue)
 - [Singly Linked List](https://github.com/ViNN280801/C_Data_Structures/tree/main/Singly%20Linked%20List)
