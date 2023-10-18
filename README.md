@@ -4,6 +4,7 @@ This repository contains various data structures, implemented with C language. E
 
 ## List of available data structures
 
+- [Binary Search Tree](https://github.com/ViNN280801/C_Data_Structures/tree/main/Binary%20Search%20Tree)
 - [Circular Doubly Linked List](https://github.com/ViNN280801/C_Data_Structures/tree/main/Circular%20Doubly%20Linked%20List)
 - [Circular Queue](https://github.com/ViNN280801/C_Data_Structures/tree/main/Circular%20Queue)
 - [Circular Singly Linked List](https://github.com/ViNN280801/C_Data_Structures/tree/main/Circular%20Singly%20Linked%20List)
