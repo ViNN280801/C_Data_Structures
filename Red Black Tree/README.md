@@ -2,23 +2,23 @@
 
 ## Description
 
-A Red-Black Tree is a self-balancing binary search tree where each node has an extra attribute called "color," which can be either red or black. This implementation of a Red-Black Tree provides various operations for maintaining the tree's balance and efficiently searching for and inserting data.
+A [Red-Black Tree](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree) is a self-balancing binary search tree where each node has an extra attribute called "color," which can be either red or black. This implementation of a Red-Black Tree provides various operations for maintaining the tree's balance and efficiently searching for and inserting data.
 
 ## Functionality
 
 This Red-Black Tree implementation provides the following operations:
 
 - `initRedBlackTree():` Initializes a new Red-Black Tree.
-- `insert(RedBlackTree \*tree, int data):` Inserts a new node with the given data into the Red-Black Tree.
-- `search(RedBlackTree \*tree, int data):` Searches for a specific data element in the Red-Black Tree and returns true if found, false otherwise.
-- `deleteNode(RedBlackTree \*tree, int data):` Deletes a node with the specified data from the Red-Black Tree.
-- `inOrderTraverse(RedBlackTree \*tree):` Performs an in-order traversal of the Red-Black Tree, displaying the elements in ascending order.
-- `preOrderTraverse(RedBlackTree \*tree):` Performs a pre-order traversal of the Red-Black Tree.
-- `postOrderTraverse(RedBlackTree \*tree):` Performs a post-order traversal of the Red-Black Tree.
-- `minVal(RedBlackTree \*tree):` Finds and returns the minimal value in the Red-Black Tree.
-- `maxVal(RedBlackTree \*tree):` Finds and returns the maximal value in the Red-Black Tree.
-- `size(RedBlackTree \*tree):` Returns the number of nodes in the Red-Black Tree.
-- `destroyRedBlackTree(RedBlackTree \*tree):` Destroys the Red-Black Tree and frees the allocated memory.
+- `insert(RedBlackTree *tree, int data):` Inserts a new node with the given data into the Red-Black Tree.
+- `search(RedBlackTree *tree, int data):` Searches for a specific data element in the Red-Black Tree and returns true if found, false otherwise.
+- `deleteNode(RedBlackTree *tree, int data):` Deletes a node with the specified data from the Red-Black Tree.
+- `inOrderTraverse(RedBlackTree *tree):` Performs an in-order traversal of the Red-Black Tree, displaying the elements in ascending order.
+- `preOrderTraverse(RedBlackTree *tree):` Performs a pre-order traversal of the Red-Black Tree.
+- `postOrderTraverse(RedBlackTree *tree):` Performs a post-order traversal of the Red-Black Tree.
+- `minVal(RedBlackTree *tree):` Finds and returns the minimal value in the Red-Black Tree.
+- `maxVal(RedBlackTree *tree):` Finds and returns the maximal value in the Red-Black Tree.
+- `size(RedBlackTree *tree):` Returns the number of nodes in the Red-Black Tree.
+- `destroyRedBlackTree(RedBlackTree *tree):` Destroys the Red-Black Tree and frees the allocated memory.
 
 ## Compiling
 
