@@ -2,7 +2,7 @@
 
 ## Description
 
-A graph is a data structure that consists of a finite set of vertices (nodes) and a set of edges connecting these vertices. Graphs are widely used to represent various relationships and connections between objects. This implementation provides a graph data structure in C using an adjacency list representation.
+A [graph](https://en.wikipedia.org/wiki/Graph_theory) is a data structure that consists of a finite set of vertices (nodes) and a set of edges connecting these vertices. Graphs are widely used to represent various relationships and connections between objects. This implementation provides a graph data structure in C using an adjacency list representation.
 
 ## Functionality
 
