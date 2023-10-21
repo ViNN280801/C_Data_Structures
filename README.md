@@ -10,6 +10,7 @@ This repository contains various data structures, implemented with C language. E
 - [Circular Singly Linked List](https://github.com/ViNN280801/C_Data_Structures/tree/main/Circular%20Singly%20Linked%20List)
 - [Deque](https://github.com/ViNN280801/C_Data_Structures/tree/main/Deque)
 - [Doubly Linked List](https://github.com/ViNN280801/C_Data_Structures/tree/main/Doubly%20Linked%20List)
+- [Graph](https://github.com/ViNN280801/C_Data_Structures/tree/main/Graph)
 - [Hash Table](https://github.com/ViNN280801/C_Data_Structures/tree/main/Hash%20Table)
 - [Heap](https://github.com/ViNN280801/C_Data_Structures/tree/main/Heap)
 - [Magnetic Tape](https://github.com/ViNN280801/C_Data_Structures/tree/main/Magnetic%20Tape)
